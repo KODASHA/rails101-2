@@ -2,7 +2,7 @@
   <div class="group">
 
     <span class="pull-right">
-      <% if current_user && current_user.is_member_of?(@gorup) %>
+      <% if current_user && current_user.is_member_of?(@group) %>
         <label class="label label-success"> 群組成員 </label>
         <%= link_to("Quit Group", quit_group_path(@group), method: :post, class: "btn btn-default") %>
       <% else %>
